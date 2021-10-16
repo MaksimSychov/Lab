@@ -1,0 +1,16 @@
+E:\Университет\Lab1\Lab1_11\Lab1_11\bin\Debug\net6.0\Lab1_11.exe
+E:\Университет\Lab1\Lab1_11\Lab1_11\bin\Debug\net6.0\Lab1_11.deps.json
+E:\Университет\Lab1\Lab1_11\Lab1_11\bin\Debug\net6.0\Lab1_11.runtimeconfig.json
+E:\Университет\Lab1\Lab1_11\Lab1_11\bin\Debug\net6.0\Lab1_11.dll
+E:\Университет\Lab1\Lab1_11\Lab1_11\bin\Debug\net6.0\ref\Lab1_11.dll
+E:\Университет\Lab1\Lab1_11\Lab1_11\bin\Debug\net6.0\Lab1_11.pdb
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\Lab1_11.GlobalUsings.g.cs
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\Lab1_11.csproj.AssemblyReference.cache
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\Lab1_11.GeneratedMSBuildEditorConfig.editorconfig
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\Lab1_11.AssemblyInfoInputs.cache
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\Lab1_11.AssemblyInfo.cs
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\Lab1_11.csproj.CoreCompileInputs.cache
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\Lab1_11.dll
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\ref\Lab1_11.dll
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\Lab1_11.pdb
+E:\Университет\Lab1\Lab1_11\Lab1_11\obj\Debug\net6.0\Lab1_11.genruntimeconfig.cache
