@@ -13,7 +13,7 @@
         var b = new List<int>();
         var c = new List<int>();
         double sum;
-        bool TrueOrFalse = false;
+        bool Flag = false;
         for (int x = 0; x <= N; x++)
         {
             for (int y = 0; y <= N; y++)
@@ -23,7 +23,7 @@
                     sum = Math.Pow(x, 3) + Math.Pow(y, 3) + Math.Pow(z, 3);
                     if (sum == N)
                     {
-                        TrueOrFalse = true;
+                        Flag = true;
                         a.Add(x);
                         b.Add(y);
                         c.Add(z);
@@ -31,7 +31,7 @@
                 }
             }
         }
-        if (TrueOrFalse)
+        if (Flag)
             for (int i = 0; i < a.Count; i++)
             {
                 Console.WriteLine("N = {0}^3 + {1}^3 + {2}^3", a[i], b[i], c[i]);
