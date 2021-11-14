@@ -19,12 +19,11 @@ class Program
         Console.WriteLine();
         Console.WriteLine("Элементы массива в обратном направлении без отрицательных чисел: ");
         array = array.Reverse().ToArray();
-        for (int i = 0, count = 0; i < array.Length; i++)
+        for (int i = 0; i < array.Length; i++)
         {
             if (array[i] >= 0)
             {
                 Console.Write(array[i] + " ");
-                count++;
             }   
         }
         Console.ReadKey();
