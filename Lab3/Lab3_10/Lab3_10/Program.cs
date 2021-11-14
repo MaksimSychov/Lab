@@ -19,19 +19,19 @@
                 Console.Write(array[i] + " ");
             }
             Console.WriteLine();
-            bool T = true;
+            bool flag = true;
             if (n == 0 || n == 1)
             {
-                T = false;
+                flag = false;
             }
             for (int i = 0; i < array.Length - 1; i++)
             {
                 if (array[i] > array[i + 1])  //если текущий элемент массива больше, чем следующий, то T=false 
                 {
-                    T = false;
+                    flag = false;
                 }
             }
-            Console.WriteLine(T);
+            Console.WriteLine(flag);
             Console.ReadKey();
         }
         else
