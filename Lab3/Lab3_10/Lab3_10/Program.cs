@@ -26,7 +26,7 @@
             }
             for (int i = 0; i < array.Length - 1; i++)
             {
-                if (array[i] > array[i + 1])  //если текущий элемент массива больше, чем следующий, то T=false 
+                if (array[i] > array[i + 1])
                 {
                     flag = false;
                 }
