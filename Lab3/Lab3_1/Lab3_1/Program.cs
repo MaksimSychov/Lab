@@ -14,10 +14,6 @@ class Program
         for (int i = 0; i < array.Length; i++)
         {
             array[i] = random.Next(-30, 45);
-        }
-        Console.WriteLine("Вывод массива:");
-        for (int i = 0; i < array.Length; i++)
-        {
             Console.Write(array[i] + " ");
         }
         Console.WriteLine();
@@ -31,7 +27,6 @@ class Program
                 count++;
             }   
         }
-        Console.WriteLine();
         Console.ReadKey();
     }
 }
