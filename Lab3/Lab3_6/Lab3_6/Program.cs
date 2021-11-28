@@ -36,13 +36,13 @@ class Program
          }
          return result;
     }
-    static int sumRecursive(int[] array)
+    static int sumRecursive(int[] array, int i = 0)
     {
         if (array.Length == 0)
         {
             return 0;
         }
-        return array[0] + sumRecursive(array[1..]);
+        return array[0] + sumRecursive(array, i + 1);
     }
     static int minIterative(int[] array)
     {
