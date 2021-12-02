@@ -1,0 +1,16 @@
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\bin\Debug\net5.0\Lab3_2.exe
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\bin\Debug\net5.0\Lab3_2.deps.json
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\bin\Debug\net5.0\Lab3_2.runtimeconfig.json
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\bin\Debug\net5.0\Lab3_2.runtimeconfig.dev.json
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\bin\Debug\net5.0\Lab3_2.dll
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\bin\Debug\net5.0\ref\Lab3_2.dll
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\bin\Debug\net5.0\Lab3_2.pdb
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\obj\Debug\net5.0\Lab3_2.csproj.AssemblyReference.cache
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\obj\Debug\net5.0\Lab3_2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\obj\Debug\net5.0\Lab3_2.AssemblyInfoInputs.cache
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\obj\Debug\net5.0\Lab3_2.AssemblyInfo.cs
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\obj\Debug\net5.0\Lab3_2.csproj.CoreCompileInputs.cache
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\obj\Debug\net5.0\Lab3_2.dll
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\obj\Debug\net5.0\ref\Lab3_2.dll
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\obj\Debug\net5.0\Lab3_2.pdb
+E:\Университет\Lab3(1)\Lab3_2\Lab3_2\obj\Debug\net5.0\Lab3_2.genruntimeconfig.cache

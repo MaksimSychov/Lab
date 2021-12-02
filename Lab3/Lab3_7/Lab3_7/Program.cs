@@ -4,7 +4,7 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("Введите номер члена ряда Фибоначчи: ");
-        int number = Convert.ToInt32(Console.ReadLine());    
+        int number = Convert.ToInt32(Console.ReadLine());
         if (number < 0)
         {
             Console.WriteLine("Введите положительное число!");

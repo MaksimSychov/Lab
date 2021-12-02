@@ -1,4 +1,5 @@
-﻿class Program
+﻿using System;
+class Program
 {
     static void Main(string[] args)
     {
@@ -7,18 +8,16 @@
         if (n % 2 == 0)
         {
             int[] array = new int[n];
-            //Заполнение массива
+
+            //Заполнение и вывод массива
             Random random = new Random();
             for (int i = 0; i < n; i++)
             {
                 array[i] = random.Next(25);
-            }
-            Console.WriteLine("Массив:");
-            for (int i = 0; i < n; i++)
-            {
                 Console.Write(array[i] + " ");
             }
             Console.WriteLine();
+
             bool flag = true;
             if (n == 0 || n == 1)
             {

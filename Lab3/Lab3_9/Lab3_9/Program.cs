@@ -7,9 +7,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[,] array_1 = new int[9, 9];
+        int[,] array = new int[9, 9];
         int MainDiagonal;
-        int SideDiagonal;      
+        int SideDiagonal;
 
         //Заполнение массива
         Random random = new Random();
@@ -17,7 +17,7 @@ class Program
         {
             for (int j = 0; j < 9; j++)
             {
-                array_1[i, j] = random.Next(0, 10);
+                array[i, j] = random.Next(0, 10);
             }
         }
 
@@ -27,7 +27,7 @@ class Program
         {
             for (int j = 0; j < 9; j++)
             {
-                Console.Write(array_1[i, j] + "\t");
+                Console.Write(array[i, j] + "\t");
             }
             Console.WriteLine();
             Console.WriteLine();
@@ -40,12 +40,12 @@ class Program
             {
                 if (i == j)
                 {
-                    MainDiagonal = array_1[i, j];
-                    array_1[i, j] = array_1[i, 9 - 1 - i];
-                    array_1[i, 9 - 1 - i] = MainDiagonal;
+                    MainDiagonal = array[i, j];
+                    array[i, j] = array[i, 9 - 1 - i];
+                    array[i, 9 - 1 - i] = MainDiagonal;
                 }
             }
-        }        
+        }
 
         //Побочная диагональ   
         for (int i = 0; i < 9; i++)
@@ -54,9 +54,9 @@ class Program
             {
                 if (i + j == 9 - 1)
                 {
-                    SideDiagonal = array_1[i, j];
-                    array_1[i, j] = array_1[9 - 1 - i, i];
-                    array_1[9 - 1 - i, i] = SideDiagonal;
+                    SideDiagonal = array[i, j];
+                    array[i, j] = array[9 - 1 - i, i];
+                    array[9 - 1 - i, i] = SideDiagonal;
                 }
             }
         }
@@ -67,7 +67,7 @@ class Program
         {
             for (int j = 0; j < 9; j++)
             {
-                Console.Write(array_1[i, j] + "\t");
+                Console.Write(array[i, j] + "\t");
             }
             Console.WriteLine();
             Console.WriteLine();

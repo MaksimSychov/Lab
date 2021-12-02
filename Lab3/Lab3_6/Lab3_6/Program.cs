@@ -11,38 +11,41 @@ class Program
         int k = int.Parse(Console.ReadLine());
         int[] array = new int[k];
         Random random = new Random();
+        int sumRec = 0;
+        int minRec = int.MaxValue;
         for (int i = 0; i < k; i++)
         {
             array[i] = random.Next(k);
-        }
-        Console.WriteLine("Массив:");
-        for (int i = 0; i < k; i++)
-        {
             Console.Write(array[i] + " ");
         }
-        Console.WriteLine();
+        Console.WriteLine("");
         Console.WriteLine("Демонстрация работы функции \"sumIterative\":\t" + sumIterative(array));
-        Console.WriteLine("Демонстрация работы функции \"sumRecursive\":\t" + sumRecursive(array));
+        Console.WriteLine("Демонстрация работы функции \"sumRecursive\":\t" + sumRecursive(array, sumRec));
         Console.WriteLine("Демонстрация работы функции \"minIterative\":\t" + minIterative(array));
-        Console.WriteLine("Демонстрация работы функции \"minRecursive\":\t" + minRecursive(array, array[0]));
+        Console.WriteLine("Демонстрация работы функции \"minRecursive\":\t" + minRecursive(array, minRec));
         Console.ReadKey();
     }
     static int sumIterative(int[] array)
     {
-         int result = 0;
-         for (int i = 0; i < array.Length; i++)
-         {
-            result = result + array[i];
-         }
-         return result;
-    }
-    static int sumRecursive(int[] array, int i = 0)
-    {
-        if (array.Length == 0)
+        int result = 0;
+        for (int i = 0; i < array.Length; i++)
         {
-            return 0;
+            result = result + array[i];
         }
-        return array[0] + sumRecursive(array, i + 1);
+        return result;
+    }
+    static int sumRecursive(int[] array, int sumRec, int i = 0)
+    {
+        if (i >= array.Length)
+        {
+            return sumRec;
+        }
+        else
+        {
+            sumRec += array[i];
+            i++;
+        }
+        return sumRecursive(array, sumRec, i);
     }
     static int minIterative(int[] array)
     {
@@ -54,16 +57,16 @@ class Program
         }
         return min;
     }
-    static int minRecursive(int[] array, int min)
+    static int minRecursive(int[] array, int minRec, int i = 0)
     {
-        if (array.Length == 0)
+        if (i < array.Length)
         {
-            return min;
+            if (array[i] < minRec)
+            {
+                minRec = array[i];
+            }
+            return minRecursive(array, minRec, i + 1);
         }
-        if (min > array[0])
-        {
-            min = array[0];
-        }
-        return minRecursive(array[1..], min);
+        return minRec;
     }
 }

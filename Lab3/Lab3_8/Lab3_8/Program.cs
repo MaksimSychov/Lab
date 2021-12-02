@@ -3,7 +3,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Введите матрицу N*N: ");
+        Console.Write("Введите матрицу N x N: ");
         int N = int.Parse(Console.ReadLine());
         double[,] matrix = new double[N, N];
         if (N <= 0)
@@ -55,7 +55,7 @@ class Program
                 for (int i = 0; i < matrix.GetLength(0); i++)
                 {
                     double[,] Minor = getMinor(matrix, i);
-                    result += Math.Pow(-1, i) * matrix[0, i] * DeterminantMatrix(Minor);                       
+                    result += Math.Pow(-1, i) * matrix[0, i] * DeterminantMatrix(Minor);
                 }
                 return result;
             }
