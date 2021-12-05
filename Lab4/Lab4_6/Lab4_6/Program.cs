@@ -16,7 +16,7 @@ class Program
         foreach (Match match in nums)
         {
             int num = int.Parse(match.Value);
-            Console.Write($"{count}) равняется " + num + " ");
+            Console.WriteLine($"{count}) равняется " + num + " ");
             count++;
         }
         Console.ReadKey();

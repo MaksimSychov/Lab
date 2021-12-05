@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 class Program
-{		
+{
 	static void Main(string[] args)
-    {
+	{
 		string[] trackList = new string[10];
 		trackList[0] = "Gentle Giant – Free Hand [06:15]";
 		trackList[1] = "Supertramp – Child Of Vision [07:27]";
@@ -78,8 +78,8 @@ class Program
 			}
 		}
 		Console.WriteLine("Общее время: " + TotalTime(trackList).ToString() + " или " + sum + " секунд");
-		Console.WriteLine("Самая длинная песня: " + shortestSong);
-		Console.WriteLine("Самая короткая песня: " + longestSong);
+		Console.WriteLine("Самая длинная песня: " + longestSong);
+		Console.WriteLine("Самая короткая песня: " + shortestSong);
 		Console.WriteLine("Песни с минимальной разницей во времени звучания: \"{0}\" и \"{1}\"", trackList[firstTrackIndex], trackList[secondTrackIndex]);
 		Console.ReadKey();
 	}

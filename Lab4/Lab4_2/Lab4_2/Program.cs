@@ -1,15 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 class Program
 {
-	static void Main(string[] args)
-	{
+    static void Main(string[] args)
+    {
         Console.WriteLine("Введите предложение: ");
         string text = Console.ReadLine();
         Console.WriteLine("Через обработку строки как массива символов:");
         Array(text);
         Console.WriteLine("С помощью метода класса string:");
-        String(text);               
+        Console.WriteLine(String(text));
         Console.ReadKey();
     }
     static void Array(string text)
@@ -29,28 +33,18 @@ class Program
         }
         Console.WriteLine();
     }
-    static void String(string text)
+    static string String(string text)
     {
-        string[] words = text.Split(new char[] { ' ', '-', '.', ',' }, StringSplitOptions.RemoveEmptyEntries);
-        int count = 1;
-        for (int i = 0; i < words.Length; i++)
+        string newtext = text;
+        for (int i = 1, n = 1, count = 1; i < text.Length; i++)
         {
-            if (words[i].EndsWith("."))
+            if (Char.IsLetter(text[i]) && (text[i + 1] == ' ' || text[i + 1] == '-' || text[i + 1] == '.' || text[i + 1] == ','))
             {
-                words[i] = words[i].Insert(words[i].Length, "(" + (count) + ")");
+                string number = $"({count++})";
+                newtext = newtext.Insert(i + n, number);
+                n += number.Length;
             }
-            else if (words[i] == "-" || words[i] == " ")
-            {
-                continue;
-            }
-            else
-            {
-                words[i] = words[i].Insert(words[i].Length, "(" + (count) + ") ");
-            }
-            count++;
         }
-        foreach (String str in words)
-            Console.Write(str);
-        Console.WriteLine();
+        return newtext;
     }
 }

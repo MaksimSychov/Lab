@@ -24,7 +24,7 @@ class Program
             List<char> list = new List<char>();
             if (separators.Contains(text[i]) & !separators.Contains(text[i - 1]))
             {
-                while(j < i)
+                while (j < i)
                 {
                     list.Add(text[j]);
                     j++;
@@ -36,7 +36,6 @@ class Program
         }
         for (int i = words.Count - 1; i >= 0; i--)
         {
-
             newtext = i == 0 ? newtext + words[i] + "." : newtext + words[i] + " ";
         }
         return newtext.Trim();

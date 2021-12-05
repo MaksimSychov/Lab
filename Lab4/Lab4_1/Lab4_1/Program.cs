@@ -11,9 +11,9 @@ class Program
         string text = Console.ReadLine().ToLower();
         Console.WriteLine("Через обработку строки как массива символов: ");
         first_way(text);
-        Console.ReadLine();
-        Console.WriteLine("С помощью методов класса string: ");          
-        second_way(text);                     
+        Console.WriteLine();
+        Console.WriteLine("С помощью методов класса string: ");
+        second_way(text);
         Console.ReadKey();
     }
     static void first_way(string text)

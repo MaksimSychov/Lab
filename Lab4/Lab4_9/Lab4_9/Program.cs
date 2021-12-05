@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
 class Program
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Введите текст: ");
-        string text = Console.ReadLine();
+	static void Main(string[] args)
+	{
+		Console.WriteLine("Введите текст: ");
+		string text = Console.ReadLine();
 		text = text.ToLower();
-        Console.WriteLine();  
+		Console.WriteLine();
 		Console.WriteLine("Через обработку строки как массива символов:");
 		Console.WriteLine(Array(text));
 		Console.WriteLine("С помощью с помощью методов классов string и / или StringBuilder: ");
