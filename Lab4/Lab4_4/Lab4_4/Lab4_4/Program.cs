@@ -12,8 +12,7 @@ class Program
         string[] text_array = new string[7];
         for (int i = 0; i < text_array.Length; i++)
         {
-            Console.Write(number + ".");
-            Console.WriteLine("Введите строку: ");
+            Console.WriteLine(number + ". " + "Введите строку: ");
             text_array[i] = Console.ReadLine();
             number++;
         }
@@ -82,7 +81,7 @@ class Program
         List<int> counts = new List<int>();
         for (int i = 0; i < text_array.Length; i++)
         {
-            int count = text_array[i].Count(Char.IsWhiteSpace);
+            int count = text_array[i].Count();
             counts.Add(count);
         }
         int the_smallest_number_of_spaces = counts.IndexOf(counts.Min()) + 1;

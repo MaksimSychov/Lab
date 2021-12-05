@@ -10,13 +10,13 @@ class Program
         Console.WriteLine("Введите предложение: ");
         string text = Console.ReadLine().ToLower();
         Console.WriteLine("Через обработку строки как массива символов: ");
-        first_way(text);
+        Array(text);
         Console.WriteLine();
         Console.WriteLine("С помощью методов класса string: ");
-        second_way(text);
+        String(text);
         Console.ReadKey();
     }
-    static void first_way(string text)
+    static void Array(string text)
     {
         for (int i = 0; i < text.Length; i++)
         {
@@ -38,7 +38,7 @@ class Program
             }
         }
     }
-    static void second_way(string text)
+    static void String(string text)
     {
         for (int i = 0; i < text.Length; i++)
         {
