@@ -19,8 +19,8 @@ class Program
 
 		public void showTable()
 		{
-			Console.WriteLine("{0, -20} {1, -5} {2, -10} {3, -10}", surname, position, year, salary);
-			Console.WriteLine();
+			Console.WriteLine($"|{surname,-24}|{position,-12}|{year,-20}|{salary,-15}|");
+			Console.WriteLine(new String('-', 76));
 		}
 	}
 
@@ -81,11 +81,17 @@ class Program
 			int selector = int.Parse(Console.ReadLine());
 			if (selector == 1)
 			{
+				Console.WriteLine(new String('-', 76));
+				Console.WriteLine($"{"|Отдел кадров",-75}|");
+				Console.WriteLine(new String('-', 76));
+				Console.WriteLine($"{"|Фамилия",-25}|{"Должность",-12}|{"Год рождения",-20}|{"Оклад (грн)",-15}|");
+				Console.WriteLine(new String('-', 76));
 				for (int i = 0; i < table.Count; i++)
 				{
 					table[i].showTable();
 				}
-				Console.WriteLine();
+				Console.WriteLine($"{"|Перечисляемый тип: П - преподаватель, С - студент, А - аспирант",-75}|");
+				Console.WriteLine(new String('-', 76));
 			}
 			if (selector == 2)
 			{
