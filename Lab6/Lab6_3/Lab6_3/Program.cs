@@ -32,7 +32,7 @@ public class Third
 
         File.WriteAllLines(secondFilePath, newText.Split('\n'));
         Console.WriteLine();
-        Console.WriteLine("Count of void strings: " + countOfVoidStrings);
+        Console.WriteLine("Количество пустых строк: " + countOfVoidStrings);
         Console.ReadLine();
     }
 }
